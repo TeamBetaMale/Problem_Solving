@@ -42,7 +42,7 @@ public:
         // 2. Current node set PREVIOUS node to the CURRENT node
         node->_prev = _lastNode;
         
-        // !!!3. Current node set NEXT node to the FIRST node!!! (Circular Linked List)
+        // !!!3.Chain to First and Last nodes!!! (Circular Linked List)
         node->_next = this->_firstNode;
         this->_firstNode->_prev = node;
 
