@@ -39,7 +39,7 @@ int main()
 				}
 				operations.pop();
 			}
-			else if (input[i] == '*' || input[i] == '/') {
+			else  if (input[i] == '*' || input[i] == '/') {
 				while (!operations.empty() && (operations.top() == '*' || operations.top() == '/')) { // 곱셈, 나눗셈이면 기존에 스택에 있던게 곱셈나눗셈만 아니면 먼저 뱉게함?
 					cout << operations.top();
 					operations.pop();
